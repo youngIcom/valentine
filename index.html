@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-  <link href="https://github.com/youngIcom/valentine/blob/main/styles.css" rel="stylesheet" type="text/css" />
+  <link href="https://static.staticsave.com/valentine/styles.css" rel="stylesheet" type="text/css" />
   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
   <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
   
@@ -22,42 +22,44 @@
    <audio src="music.mp3" id="linkmp3" class="sembunyi"></audio>
    
    <div id="bodyblur">
-     <!-- Wallpaper --><img src="images/bg-1.jpeg" id="wallpaper"/><div id="beneranblur"></div>
+     <!-- Wallpaper --><img src="https://i.postimg.cc/905BCbwW/bg-1.jpg" id="wallpaper"/><div id="beneranblur"></div>
    </div>
    
    <div id='Content'>
 
      <div id="kadoIn">
-       <!-- Tombol Surat --><img src="https://i.pinimg.com/736x/81/0d/df/810ddf91b1a90e70f7d21d646d25a170.jpg"/>
+       <!-- Tombol Surat --><img src="https://i.postimg.cc/kXyyPxJm/logohati.png"/>
      </div>
      <p id="ket">Tekan Hati-nya</p>
 
      <div class="kumpulanstiker">
          <!-- Stiker untuk Konten -->
-         <img src="https://cdn.glitch.global/205a20fa-7ff8-492e-913f-e9e2b4745b87/1.gif?1707797441517" id="fotostiker"/>
-         <img src="https://cdn.glitch.global/205a20fa-7ff8-492e-913f-e9e2b4745b87/2.gif?1707797454303" id="fotostiker1"/>
-         <img src="https://cdn.glitch.global/205a20fa-7ff8-492e-913f-e9e2b4745b87/3.gif?1707797473404" id="fotostiker2"/>
-         <img src="https://cdn.glitch.global/205a20fa-7ff8-492e-913f-e9e2b4745b87/4.gif?1707797492684" id="fotostiker3"/>
-         <img src="https://cdn.glitch.global/205a20fa-7ff8-492e-913f-e9e2b4745b87/thumbnails%2F5.gif?1707797517835" id="fotostiker4"/>
-         <img src="https://cdn.glitch.global/205a20fa-7ff8-492e-913f-e9e2b4745b87/hv.gif?1707797540871" id="fotostiker5"/>
+         <img src="https://i.postimg.cc/Prfppzqq/1.gif" id="fotostiker"/>
+         <img src="https://i.postimg.cc/4y2Jhc8K/2.gif" id="fotostiker1"/>
+         <img src="https://i.postimg.cc/Vvh8N86n/3.gif" id="fotostiker2"/>
+         <img src="https://i.postimg.cc/gk5zzvXQ/4.gif" id="fotostiker3"/>
+         <img src="https://i.postimg.cc/2SZzVVn6/5.gif" id="fotostiker4"/>
+         <img src="https://i.postimg.cc/zB5Xm8bf/hv.gif" id="fotostiker5"/>
          
-         <img src="https://cdn.glitch.global/205a20fa-7ff8-492e-913f-e9e2b4745b87/valentine.gif?1707797559662" id="fotostiker6"/>
+         <img src="https://i.postimg.cc/BZmZyWqq/valentine.gif" id="fotostiker6"/>
      </div>
      
      <p id="halo" class="halo"></p>
+
+     <!-- ganti pesan yang kamu inginkan disini -->
      
      <div><blockquote id='bq' data-text='㋡'>
        <p id="kalimat">Aku mau bacain kamu puisi</p>
 
        <p id="pesan1"> Tapi tekan yang dibawah ini dulu ya 😆❤️</p>
        <div id="kolombaru">
-         <li id="lv1">💘</li>
-         <li id="lv2">💘</li>
-         <li id="lv3">💘</li>
-         <li id="lv4">💘</li>
+         <li id="lv1">💘</li> <!-- untuk simbol bisa kamu ambil di https://emojipedia.org/ -->
+         <li id="lv2">💘</li> <!-- untuk simbol bisa kamu ambil di https://emojipedia.org/ -->
+         <li id="lv3">💘</li> <!-- untuk simbol bisa kamu ambil di https://emojipedia.org/ -->
+         <li id="lv4">💘</li> <!-- untuk simbol bisa kamu ambil di https://emojipedia.org/ -->
        </div>
 
-       <p id="pesan2">Terbang melayang angan mengecapi</p>
+       <p id="pesan2">Terbang melayang angan mengecapi</p> <!-- kamu juga bisa mengganti teks ini -->
        <!-- Pesan -->
        <p id="pesan3">Ingin mencapai ke puncak tinggi </p>
        <p id="pesan4">Jauh hingga mencakar langit </p>
@@ -81,12 +83,18 @@
      
      <!-- Pesan Ditolak -->
      <div id="pesanditolak">
-       <img id="stikerditolak" src="gif/5.gif"/>
+       <img id="stikerditolak" src="https://i.postimg.cc/2SZzVVn6/5.gif"/>
        <p id="kataditolak">Yaudah kalo gamau, aku simpan lagi 😜</p>
      </div>
 
    </div>
 
+
+
+
+
+
+<!-- jangan diganggu -->
 <script>
   const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2300, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); audio = new Audio('' + linkmp3.src); ftganti=0;fungsi=0;fungsiAwal=0;deffotostiker=fotostiker.src;function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-snowflake"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-snowflake"); if (heartArr.length > 100) {heartArr[0].remove()}},100);Content.style = "opacity:1;margin-top:16vh"; const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80,}); 
 	
@@ -109,6 +117,7 @@
     }
   }
 
+  // ini bisa kamu ganti pada teks yang berada di dalam tanda kutip
   //Variable Pertanyaan Akhir
   var tanya = 'Sebelum lanjut, Aku nawarin nih, kamu mau ngak nerima cokelat dari aku? 🥰';
   var opstanya = 'Silahkan di Vote 😘';
@@ -117,7 +126,8 @@
     
     async function menuju(){pesanwhatsapp = "Makasii udah ngucapin " + nama + " Happy Valentine ><";await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=82213943130&text=" + pesanwhatsapp;}
 </script>
-<script src="https://github.com/youngIcom/valentine-2024/blob/main/script.js"></script>
+<script src="https://static.staticsave.com/valentine/script.js"></script>
 <!-- Sampai Sini -->
+
 </body>
   </html>
